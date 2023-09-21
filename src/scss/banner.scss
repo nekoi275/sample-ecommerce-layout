@@ -1,0 +1,22 @@
+#banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 445px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .banner-container {
+    max-width: 420px;
+    p,
+    h6 {
+      color: #ffffff;
+      line-height: 18px;
+    }
+
+    h6 {
+      padding-bottom: 40px;
+    }
+  }
+}

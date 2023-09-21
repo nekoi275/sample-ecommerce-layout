@@ -1,0 +1,39 @@
+$dark-font-color: #100102;
+
+$base-color: #4E3064;
+$details-color: #FB7488;
+$details-color2: #F05165;
+$light-font-color: #AA4DB9;
+$background-color: #F2F1F5;
+
+@mixin overlay {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+
+@mixin button {
+  background-color: transparent;
+  padding: 13px 0px 13px 0px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  cursor: pointer;
+  line-height: 1;
+}
+
+@mixin dropdown {
+  position: absolute;
+  top: 75px;
+  background-color: $base-color;
+  color: #ffffff;
+  display: none;
+  z-index: 100;
+  &.active {
+    display: block;
+  }
+}

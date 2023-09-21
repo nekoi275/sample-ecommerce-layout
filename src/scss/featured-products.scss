@@ -1,0 +1,62 @@
+@use "variables" as *;
+
+#featured-products {
+  background-color: $base-color;
+  color: #ffffff;
+  text-align: center;
+  padding: 45px 0px 65px 0px;
+  h4 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  p {
+    line-height: 36px;
+  }
+
+  .featured-products-slashes {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 36px;
+    padding-bottom: 35px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 3px;
+    &::after,
+    &::before {
+      content: "";
+      border-bottom: 2px solid #ffffff;
+      flex: 1;
+    }
+    &::after {
+      margin: 0px 330px 0px 10px;
+    }
+    &::before {
+      margin: 0px 10px 0px 330px;
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    top: -52px;
+  }
+  .slick-next {
+    right: 306px;
+  }
+  .slick-prev {
+    left: 306px;
+  }
+  .slick-slide {
+    margin: 0px 15px 0px 15px;
+  }
+  .product-tile {
+    color: $dark-font-color;
+    width: 270px;
+    height: 295px;
+    .product-tile-desc {
+      line-height: 18px;
+      padding: 11px;
+    }
+  }
+}

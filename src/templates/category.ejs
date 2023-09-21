@@ -1,0 +1,72 @@
+<section id="category-landing">
+    <div class="wrapper">
+        <ul class="breadcrumbs">
+            <li class="prev-link"><a href="<%= previousPageUrl %>"><%= previousPage %></a></li>
+            <li class="current-link"><%= currentPage %></li>
+        </ul>
+        <h6>Products</h6>
+        <span class="hide-filter mobile">Hide Filter</span>
+        <div class="filters">
+            <div class="row">
+                <div class="col">
+                    <label>
+                        <span>Price</span>
+                        <select>
+                            <option>$0 - $100</option>
+                            <option>$100 - $500</option>
+                        </select>
+                    </label>
+                    <div class="color-picker">
+                        <span>Color</span>
+                        <ul>
+                            <li style="background-color: #ffffff; border: 3px solid #45413e;"></li>
+                            <li style="background-color: #3d402f;"></li>
+                            <li style="background-color: #469597;"></li>
+                            <li style="background-color: #BBC6C8;"></li>
+                            <li style="background-color: #DDBEAA;"></li>
+                            <li style="background-color: #dc041d;"></li>
+                            <li style="background-color: #F05165;"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <label>
+                        <span>Brands</span>
+                        <select>
+                            <option>Awesome brand</option>
+                            <option>Nice brand</option>
+                            <option>Great brand</option>
+                        </select>
+                    </label>
+                    <label>
+                        <span>Sort by</span>
+                        <select>
+                            <option>Price</option>
+                            <option>Brand</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="col">
+                    <label>
+                        <span>Size</span>
+                        <select>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Big</option>
+                        </select>
+                    </label>
+                    <label>
+                        <span>Show</span>
+                        <select>
+                            <option>16 per page</option>
+                            <option>50 per page</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <span>12,931 results</span>
+        <div class="products-container"></div>
+        <button id="category-load-more-button">Load more</button>
+    </div>
+</section>

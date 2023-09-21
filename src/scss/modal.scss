@@ -1,0 +1,115 @@
+@use "variables" as *;
+
+.modal-container {
+  @include overlay;
+  position: fixed;
+  border-radius: 0px;
+  z-index: 300;
+  display: none;
+  opacity: 1;
+  &.active {
+    display: block;
+  }
+
+  .modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 500px;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+    color: $dark-font-color;
+    background-color: $background-color;
+    border-radius: 5px;
+    z-index: 400;
+    h4 {
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+    a {
+      color: $details-color;
+    }
+    form {
+      label {
+        width: 100%;
+        display: inline-block;
+        padding-bottom: 19px;
+        text-align: left;
+        position: relative;
+        input {
+          border: 2px solid #d7d7d7;
+          border-radius: 30px;
+          padding: 13px;
+          width: 100%;
+          box-sizing: border-box;
+          margin-top: 19px;
+        }
+        .password-show {
+          position: absolute;
+          right: 20px;
+          top: 47px;
+          color: $light-font-color;
+          cursor: pointer;
+        }
+        a {
+          float: right;
+        }
+      }
+      #login-form-button {
+        @include button;
+        background-color: $details-color;
+        margin: 25px 0px 25px 0px;
+        color: #ffffff;
+        border: none;
+        padding-left: 73px;
+        padding-right: 73px;
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+.overlay {
+  @include overlay;
+  position: fixed;
+  border-radius: 0px;
+  opacity: 0.8;
+  background-color: $base-color;
+}
+
+#cookies-message {
+  .modal {
+    width: 1170px;
+    text-align: left;
+    padding: 25px;
+    h2 {
+      font-size: 16px;
+      color: $details-color;
+    }
+    p {
+      display: inline-block;
+      max-width: 830px;
+    }
+    a {
+      color: $details-color;
+    }
+    #cookies-accept-button {
+      @include button;
+      color: #ffffff;
+      border: 2px solid #d9d9d9;
+      background-color: $details-color;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-left: 70px;
+    }
+    .fas.fa-times {
+      color: $dark-font-color;
+      font-size: 25px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+}

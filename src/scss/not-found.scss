@@ -1,0 +1,84 @@
+@use "variables" as *;
+
+#not-found {
+  background-color: #f2edea;
+  text-align: center;
+  color: $dark-font-color;
+  padding: 45px 0px 70px 0px;
+  h6 {
+    display: flex;
+    margin-top: 25px;
+    &::after,
+    &::before {
+      content: "";
+      border-bottom: 1px solid $light-font-color;
+      flex: 1;
+      margin-bottom: 20px;
+    }
+    &::after {
+      margin-left: 50px;
+    }
+    &::before {
+      margin-right: 50px;
+    }
+  }
+}
+
+.not-found-message {
+  background-color: $background-color;
+  border-radius: 5px;
+  margin-top: 50px;
+  padding: 70px 125px 70px 0px;
+  .row {
+    position: relative;
+    align-items: center;
+    .col {
+      span {
+        font-size: 113px;
+        color: $details-color;
+        font-weight: 900;
+        position: relative;
+        z-index: 1;
+      }
+      h3 {
+        display: inline;
+        color: #000000;
+        text-align: left;
+        padding-bottom: 30px;
+      }
+      p {
+        padding: 30px 0px 50px 0px;
+      }
+      .not-found-home-link {
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 400;
+        display: block;
+      }
+      label {
+        font-size: 24px;
+        font-weight: 900;
+        color: #000000;
+        margin-top: 70px;
+        display: block;
+        position: relative;
+        input {
+          border: 2px solid $light-font-color;
+          border-radius: 30px;
+          padding: 10px 20px 10px 20px;
+          text-align: left;
+          width: 100%;
+          cursor: pointer;
+          margin-top: 25px;
+        }
+        .fas.fa-search {
+          font-size: 15px;
+          color: $light-font-color;
+          position: absolute;
+          right: 20px;
+          top: 60px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "imageUrl": "img/product_8.jpg",
+        "text": "Pink cute high heels",
+        "price": 799.55,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_9.jpg",
+        "text": "Butterfly necklace",
+        "price": 299.99,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_10.jpg",
+        "text": "Grey knit cardigan",
+        "price": 129.55,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_11.jpg",
+        "text": "Pink sweater",
+        "price": 299.99,
+        "type": "hover"
+    }
+]

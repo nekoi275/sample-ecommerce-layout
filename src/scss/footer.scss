@@ -1,0 +1,49 @@
+@use "variables" as *;
+
+footer {
+    padding: 40px 0px 20px 0px;
+
+    h2 {
+        color: #333333;
+    }
+
+    li,
+    a,
+    p,
+    span {
+        color: $dark-font-color;
+        font-size: 13px;
+        line-height: 30px;
+        & :hover {
+            color: $details-color2;
+        }
+    }
+
+    p,
+    span {
+        white-space: pre-line;
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+.fab {
+    margin-left: 20px;
+}
+
+.footer-col {
+    margin: 0px 10px 0px 10px;
+}
+
+.footer-col-contacts {
+    margin-right: 50px;
+}
+
+.noheader-col {
+    margin-top: 45px;
+}
+
+.contacts-header {
+    margin-top: 35px;
+    margin-bottom: 17px;
+}

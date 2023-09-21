@@ -1,0 +1,98 @@
+[
+    {
+        "imageUrl": "img/product_3.jpg",
+        "text": "Mini white dress",
+        "price": 799.55,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_1.jpg",
+        "text": "Ametist silver ring",
+        "price": 799.55,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_8.jpg",
+        "text": "Pink cute high heels",
+        "price": 129.55,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_9.jpg",
+        "text": "Butterfly necklace",
+        "price": 299.99,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_4.jpg",
+        "text": "Black evening dress",
+        "price": 659.55,
+        "type": "button"
+    },
+    {
+        "imageUrl": "img/product_7.jpg",
+        "text": "Red wedding high heels",
+        "price": 410.99,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_5.jpg",
+        "text": "Floral print mini skirt",
+        "price": 410.99,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_10.jpg",
+        "text": "Grey knit cardigan",
+        "price": 330.55,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_12.jpg",
+        "text": "Pink evening dress",
+        "price": 330.55,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_13.jpg",
+        "text": "Red long dress",
+        "price": 410.99,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_14.jpg",
+        "text": "Dress with feathers",
+        "price": 410.99,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_15.jpg",
+        "text": "Beige wool coat",
+        "price": 2195.55,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_16.jpg",
+        "text": "White sweater",
+        "price": 129.55,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_17.jpg",
+        "text": "Silver necklace with blue gem",
+        "price": 870.95,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_18.jpg",
+        "text": "Silver charms bracelet",
+        "price": 129.55,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_19.jpg",
+        "text": "Chinese dress",
+        "price": 659.55,
+        "type": "button"
+    }
+]

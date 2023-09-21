@@ -1,0 +1,323 @@
+<header>
+    <span class="fas fa-bars mobile hidden" id="mobile-menu-button" data-mobile-menu="open"></span>
+    <span class="fas fa-times mobile hidden not-shown" id="mobile-menu-button" data-mobile-menu="close"></span>
+    <div class="logo">
+        <a href="#">
+            <img src="img/logo_icon.png" alt="Store logo">
+            <div class="logo-text desktop">
+                <span class="logo-first">Nice</span>
+                <span class="logo-second">Store</span>
+            </div>
+        </a>
+    </div>
+    <nav class="desktop">
+        <ul>
+            <li class="arrow dropdown-button" data-toggle="mega-menu">Products</li>
+            <li>About us</li>
+            <li>FAQ</li>
+            <li>Contact us</li>
+            <li class="lang arrow dropdown-button relative" data-toggle="lang-dropdown">EN
+                <div id="lang-dropdown" class="dropdown dropdown-small">
+                    <span>EN</span>
+                    <span>DE</span>
+                    <span>RU</span>
+                </div>
+            </li>
+            <li class="lang arrow dropdown-button relative" data-toggle="currency-dropdown">$ US
+                <div id="currency-dropdown" class="dropdown dropdown-small">
+                    <span>€ EUR</span>
+                    <span>$ US</span>
+                </div>
+            </li>
+        </ul>
+        <span class="fas fa-search show-1200"></span>
+        <span class="far fa-user show-1200" data-modal="open" data-modal-id="login-modal"></span>
+        <span class="far fa-heart show-1200"><span class="show-1200 count wishlist wishlist-counter">
+                <%= wishlistCount %>
+            </span></span>
+        <span class="fas fa-shopping-bag show-1200"><span class="show-1200 count products cart-counter">
+                <%= cartCount %>
+            </span></span>
+    </nav>
+</header>
+<div id="mega-menu" class="dropdown desktop">
+    <div class="wrapper">
+        <div class="row bottom">
+            <div class="col">
+                <h2>Featured</h2>
+                <ul>
+                    <li><a href="new" data-navigo>New collection 2023</a></li>
+                    <li><a href="new" data-navigo>Previous collection</a></li>
+                    <li><a href="new" data-navigo>Future collections</a></li>
+                    <li><a href="trends" data-navigo>Trending</a></li>
+                    <li><a href="special" data-navigo>Special collection</a></li>
+                    <li><a href="collab" data-navigo>Collaboration</a></li>
+                    <li><a href="recommend" data-navigo>Recommendations</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="jewelry" data-navigo>Jewelry</a></li>
+                    <li><a href="shoes" data-navigo>Shoes</a></li>
+                    <li><a href="bags" data-navigo>Bags</a></li>
+                    <li><a href="skirts" data-navigo>Skirts</a></li>
+                    <li><a href="tops" data-navigo>Tops</a></li>
+                    <li><a href="coats" data-navigo>Coats</a></li>
+                    <li><a href="shorts" data-navigo>Shorts</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li><a href="knit" data-navigo>Knitwear</a></li>
+                    <li><a href="jackets" data-navigo>Jackets</a></li>
+                    <li><a href="t-shirts" data-navigo>T-shirts</a></li>
+                    <li><a href="scarfs" data-navigo>Scarfs</a></li>
+                    <li><a href="dresses" data-navigo>Dresses</a></li>
+                    <li><a href="shirts" data-navigo>Shirts</a></li>
+                    <li><a href="accessories" data-navigo>Other accessories</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>Sale</h2>
+                <ul>
+                    <li><a href="jewelry" data-navigo>Jewelry</a></li>
+                    <li><a href="shoes" data-navigo>Shoes</a></li>
+                    <li><a href="dresses" data-navigo>Dresses</a></li>
+                    <li><a href="skirts" data-navigo>Skirts</a></li>
+                    <li><a href="tops" data-navigo>Tops</a></li>
+                    <li><a href="coats" data-navigo>Coats</a></li>
+                    <li><a href="shorts" data-navigo>Shorts</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <img src="img/mega-menu_img.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mega-menu-mobile" class="mobile">
+    <ul>
+        <li>
+            <h2 class="arrow open-next-level">Products</h2>
+            <ul class="hidden">
+                <li>
+                    <span class="arrow open-next-level">Categories</span>
+                    <ul class="hidden">
+                        <li><a href="jewelry" data-navigo>Jewelry</a></li>
+                        <li><a href="shoes" data-navigo>Shoes</a></li>
+                        <li><a href="bags" data-navigo>Bags</a></li>
+                        <li><a href="skirts" data-navigo>Skirts</a></li>
+                        <li><a href="tops" data-navigo>Tops</a></li>
+                        <li><a href="coats" data-navigo>Coats</a></li>
+                        <li><a href="shorts" data-navigo>Shorts</a></li>
+                        <li><a href="knit" data-navigo>Knitwear</a></li>
+                        <li><a href="jackets" data-navigo>Jackets</a></li>
+                        <li><a href="t-shirts" data-navigo>T-shirts</a></li>
+                        <li><a href="scarfs" data-navigo>Scarfs</a></li>
+                        <li><a href="dresses" data-navigo>Dresses</a></li>
+                        <li><a href="shirts" data-navigo>Shirts</a></li>
+                        <li><a href="accessories" data-navigo>Other accessories</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="arrow open-next-level">Sale</span>
+                    <ul class="hidden">
+                        <li><a href="jewelry" data-navigo>Jewelry</a></li>
+                        <li><a href="shoes" data-navigo>Shoes</a></li>
+                        <li><a href="dresses" data-navigo>Dresses</a></li>
+                        <li><a href="skirts" data-navigo>Skirts</a></li>
+                        <li><a href="tops" data-navigo>Tops</a></li>
+                        <li><a href="coats" data-navigo>Coats</a></li>
+                        <li><a href="shorts" data-navigo>Shorts</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h2 class="arrow">About us</h2>
+        </li>
+        <li>
+            <h2 class="arrow">FAQ</h2>
+        </li>
+        <li>
+            <h2 class="arrow">Contact us</h2>
+        </li>
+    </ul>
+    <img src="img/mega-menu_img.jpg">
+</div>
+<div id="login-modal" class="modal-container">
+    <div class="overlay" data-modal="close"></div>
+    <div class="modal">
+        <h4>Sign in</h4>
+        <form id="login-form">
+            <label>Email
+                <input type="email" required>
+            </label>
+            <label>Password
+                <a href="forgot-password" data-navigo>Forgot password</a>
+                <input id="user-pass" title="at least 1 numeric, 1 uppercase, 1 lowercase and 1 special character"
+                    type="password" minlength="6" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#\$%\^&\*]).{6,}"
+                    required>
+                <span class="fa fa-fw fa-eye password-show"></span>
+            </label>
+            <button id="login-form-button" type="submit" name="password">Login</button>
+        </form>
+        <a href="create-account" data-navigo>I don't have an account</a>
+    </div>
+</div>
+<div id="cookies-message" class="modal-container">
+    <div class="overlay" data-modal="close"></div>
+    <div class="modal">
+        <span class="fas fa-times" data-modal="close"></span>
+        <h2>This website uses cookies</h2>
+        <p>This website uses its own and third-party cookies for statistical purposes, to know your preferences, for
+            website
+            performance
+            and interaction with social media offering publicity tailored to your interests. If you continue browsing,
+            we consider that you accept its use.
+            You can expand this information consulting our <a href="cookies-policy" data-navigo>Cookies Policy Page.</a>
+        </p>
+        <button id="cookies-accept-button" data-modal="close">Accept</button>
+    </div>
+</div>
+<main></main>
+<footer class="desktop">
+    <div class="wrapper">
+        <div class="row">
+            <div class="col footer-col-contacts">
+                <p>&#169; Copyright <%= year %>
+                        All rights reserved.
+                </p>
+                <h2 class="contacts-header">Contact</h2>
+                <p>Headquarters:
+                    1111, Street, office number, City name
+                    <a href="mailto:contact@nicestore.coms">contact@nicestore.com</a>
+                    <a href="tel:+1 (888) 548-4344">+1 (234) 567-8910</a>
+                </p>
+            </div>
+            <div class="col footer-col">
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="jewelry" data-navigo>Jewelry</a></li>
+                    <li><a href="shoes" data-navigo>Shoes</a></li>
+                    <li><a href="bags" data-navigo>Bags</a></li>
+                    <li><a href="skirts" data-navigo>Skirts</a></li>
+                    <li><a href="tops" data-navigo>Tops</a></li>
+                    <li><a href="coats" data-navigo>Coats</a></li>
+                    <li><a href="shorts" data-navigo>Shorts</a></li>
+                </ul>
+            </div>
+            <div class="col footer-col noheader-col">
+                <ul>
+                    <li><a href="knit" data-navigo>Knitwear</a></li>
+                    <li><a href="jackets" data-navigo>Jackets</a></li>
+                    <li><a href="t-shirts" data-navigo>T-shirts</a></li>
+                    <li><a href="scarfs" data-navigo>Scarfs</a></li>
+                    <li><a href="dresses" data-navigo>Dresses</a></li>
+                    <li><a href="shirts" data-navigo>Shirts</a></li>
+                    <li><a href="accessories" data-navigo>Other accessories</a></li>
+                </ul>
+            </div>
+            <div class="col footer-col noheader-col">
+                <ul>
+                    <li><a href="new" data-navigo>New collection 2023</a></li>
+                    <li><a href="new" data-navigo>Previous collection</a></li>
+                    <li><a href="new" data-navigo>Future collections</a></li>
+                </ul>
+            </div>
+            <div class="col footer-col">
+                <h2>About</h2>
+                <ul>
+                    <li><a href="about" data-navigo>About us</a></li>
+                    <li><a href="delivery" data-navigo>Delivery</a></li>
+                    <li><a href="testimonials" data-navigo>Testimonials</a></li>
+                    <li><a href="contact" data-navigo>Contact</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <div class="social-media">
+                    <a href="https://www.facebook.com" target="blank">
+                        <span class="fab fa-facebook-f"></span>
+                    </a>
+                    <a href="https://www.google.com" target="blank">
+                        <span class="fab fa-google-plus-g"></span>
+                    </a>
+                    <a href="https://twitter.com" target="blank">
+                        <span class="fab fa-twitter"></span>
+                    </a>
+                    <a href="https://www.pinterest.com" target="blank">
+                        <span class="fab fa-pinterest-p"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer class="mobile">
+    <p>&#169; Copyright <%= year %>
+            All rights reserved.
+    </p>
+    <ul>
+        <li>
+            <h2 class="arrow open-next-level">Contact</h2>
+            <p class="hidden">Headquarters:
+                1111, Street, office number, City name
+                <a href="mailto:contact@nicestore.com">contact@nicestore.com</a>
+                <a href="tel:+1 (234) 567-8910">+1 (234) 567-8910</a>
+            </p>
+        </li>
+        <li>
+            <h2 class="arrow open-next-level">Categories</h2>
+            <ul class="hidden">
+                <li><a href="jewelry" data-navigo>Jewelry</a></li>
+                <li><a href="shoes" data-navigo>Shoes</a></li>
+                <li><a href="bags" data-navigo>Bags</a></li>
+                <li><a href="skirts" data-navigo>Skirts</a></li>
+                <li><a href="tops" data-navigo>Tops</a></li>
+                <li><a href="coats" data-navigo>Coats</a></li>
+                <li><a href="shorts" data-navigo>Shorts</a></li>
+                <li><a href="knit" data-navigo>Knitwear</a></li>
+                <li><a href="jackets" data-navigo>Jackets</a></li>
+                <li><a href="t-shirts" data-navigo>T-shirts</a></li>
+                <li><a href="scarfs" data-navigo>Scarfs</a></li>
+                <li><a href="dresses" data-navigo>Dresses</a></li>
+                <li><a href="shirts" data-navigo>Shirts</a></li>
+                <li><a href="accessories" data-navigo>Other accessories</a></li>
+            </ul>
+        </li>
+        <li>
+            <h2 class="arrow open-next-level">About</h2>
+            <ul class="hidden">
+                <li><a href="about" data-navigo>About us</a></li>
+                <li><a href="delivery" data-navigo>Delivery</a></li>
+                <li><a href="testimonials" data-navigo>Testimonials</a></li>
+                <li><a href="contact" data-navigo>Contact</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="social-media center-align">
+        <a href="https://www.facebook.com" target="blank">
+            <span class="fab fa-facebook-f"></span>
+        </a>
+        <a href="https://www.google.com" target="blank">
+            <span class="fab fa-google-plus-g"></span>
+        </a>
+        <a href="https://twitter.com" target="blank">
+            <span class="fab fa-twitter"></span>
+        </a>
+        <a href="https://www.pinterest.com" target="blank">
+            <span class="fab fa-pinterest-p"></span>
+        </a>
+    </div>
+</footer>
+<nav class="hide-1200">
+    <span class="fas fa-search"></span>
+    <span class="far fa-user" data-modal="open" data-modal-id="login-modal"></span>
+    <span class="far fa-heart"><span class="count wishlist wishlist-counter">
+            <%= wishlistCount %>
+        </span></span>
+    <span class="fas fa-shopping-bag"><span class="count products cart-counter">
+            <%= cartCount %>
+        </span></span>
+</nav>

@@ -1,0 +1,27 @@
+@use "variables" as *;
+
+#benefits {
+  background-color: #45413e;
+  padding: 50px 0px 60px 0px;
+  .fas {
+    color: $details-color;
+    font-size: 50px;
+    cursor: initial;
+  }
+  h1 {
+    padding-bottom: 20px;
+    color: #ffffff;
+  }
+  p {
+    color: #868380;
+    line-height: 18px;
+  }
+  .row {
+    .benefits-icon-col {
+      margin-right: 40px;
+    }
+    .benefits-text-col {
+      padding-right: 40px;
+    }
+  }
+}

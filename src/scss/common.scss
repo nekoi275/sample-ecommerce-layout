@@ -1,0 +1,170 @@
+@use "variables" as *;
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+address,
+img,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+body {
+  font-family: "Lato";
+  font-size: 14px;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-font-color;
+}
+
+main {
+  padding-top: 75px;
+}
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1170px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.bottom {
+  align-items: flex-end;
+}
+
+.fas,
+.far,
+.fab {
+  font-size: 20px;
+  color: $light-font-color;
+  cursor: pointer;
+  &:hover {
+    color: $base-color;
+  }
+}
+
+.arrow::after {
+  content: "▼";
+  color: $light-font-color;
+  font-size: 10px;
+  margin-left: 15px;
+}
+
+h1 {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+h6 {
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.col {
+  padding: 0px;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.margin-left-col {
+  margin-left: 30px;
+}
+
+.relative {
+  position: relative;
+}
+
+.dropdown-small {
+  @include dropdown;
+  width: 100%;
+  top: 56px;
+  left: 0px;
+  span {
+    display: block;
+    box-sizing: border-box;
+    padding: 15px;
+    cursor: pointer;
+    color: #ffffff;
+    &:hover {
+      background-color: $background-color;
+      color: $dark-font-color;
+    }
+  }
+}
+
+.breadcrumbs {
+  li {
+    text-transform: capitalize;
+    display: inline;
+  }
+  .prev-link::after {
+    padding: 8px;
+    content: "/\00a0";
+  }
+  li a {
+    color: $details-color;
+    text-transform: capitalize;
+    &:hover {
+      color: $dark-font-color;
+    }
+  }
+}

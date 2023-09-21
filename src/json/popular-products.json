@@ -1,0 +1,26 @@
+[
+    {
+        "imageUrl": "img/product_1.jpg",
+        "text": "Ametist silver ring",
+        "price": 799.55,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_2.jpg",
+        "text": "Small leather bag",
+        "price": 2195.00,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_3.jpg",
+        "text": "Mini white dress",
+        "price": 129.55,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_4.jpg",
+        "text": "Black evening dress",
+        "price": 629.99,
+        "type": "hover"
+    }
+]

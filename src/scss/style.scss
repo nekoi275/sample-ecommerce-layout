@@ -1,0 +1,27 @@
+@use "fonts";
+@use "../../node_modules/@drewbot/sass-flexbox-grid/public/sass-flexbox/scss/main" with (
+    $xs-max: 320px,
+    $sm-max: 768px,
+    $md-max: 1200px,
+    $lg-max: 1900px
+);
+@use "../../node_modules/slick-carousel/slick/slick";
+@use "../../node_modules/slick-carousel/slick/slick-theme" with (
+    $slick-font-path: "webfonts/",
+    $slick-loader-path: "img/"
+);
+@use "common";
+@use "header";
+@use "mega-menu";
+@use "footer";
+@use "product-tile";
+@use "popular";
+@use "banner";
+@use "benefits";
+@use "top-section";
+@use "featured-products";
+@use "modal";
+@use "category-landing";
+@use "product";
+@use "not-found";
+@use "mobile-styles";

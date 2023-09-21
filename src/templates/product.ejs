@@ -1,0 +1,142 @@
+<section id="product-details">
+    <div class="wrapper">
+        <ul class="breadcrumbs">
+            <li class="prev-link"><a href="<%= firstPageUrl %>"><%= firstPage %></a></li>
+            <li class="prev-link"><a href="<%= previousPageUrl %>" data-navigo><%= previousPage %></a></li>
+            <li class="current-link"><%= currentPage %></li>
+        </ul>
+        <h6>Chinese Hanfu dress</h6>
+        <div class="product-info">
+            <div class="row">
+                <div class="col">
+                    <div id="product-gallery" class="desktop">
+                        <div class="gallery-big-image">
+                            <img src="../img/product_gallery_big1.jpg" alt="product-image">
+                            <span id="gallery-enlarge-button" class="fas fa-expand-arrows-alt"></span>
+                        </div>
+                        <ul class="gallery-images-list">
+                            <li>
+                                <img class="gallery-small-image active" src="../img/product_gallery_big1.jpg"
+                                    alt="product-image">
+                            </li>
+                            <li>
+                                <img class="gallery-small-image" src="../img/product_gallery_big2.jpg"
+                                    alt="product-image">
+                            </li>
+                            <li>
+                                <img class="gallery-small-image" src="../img/product_gallery_big3.jpg"
+                                    alt="product-image">
+                            </li>
+                            <li>
+                                <img class="gallery-small-image" src="../img/product_gallery_big4.jpg"
+                                    alt="product-image">
+                            </li>
+                        </ul>
+                        <div id="gallery-modal" class="modal-container">
+                            <div class="overlay" data-modal="close"></div>
+                            <img class="gallery-enlarged-image" alt="product-image">
+                        </div>
+                    </div>
+                    <div id="product-gallery-slider" class="mobile">
+                        <div class="slider-for">
+                            <img src="../img/product_gallery_big1.jpg" alt="product-image">
+                            <img src="../img/product_gallery_big2.jpg" alt="product-image">
+                            <img src="../img/product_gallery_big3.jpg" alt="product-image">
+                            <img src="../img/product_gallery_big4.jpg" alt="product-image">
+                        </div>
+                        <div class="slider-nav">
+                            <img src="../img/product_gallery_big1.jpg" alt="product-image">
+                            <img src="../img/product_gallery_big2.jpg" alt="product-image">
+                            <img src="../img/product_gallery_big3.jpg" alt="product-image">
+                            <img src="../img/product_gallery_big4.jpg" alt="product-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col product-desc">
+                    <h6>$299.99</h6>
+                    <div class="product-color">
+                        <span></span>
+                        <select>
+                            <option>As picture</option>
+                        </select>
+                    </div>
+                    <label id="product-quantity-button">
+                        <span class="quantity-decrease" data-input="decrease">-</span>
+                        <input class="quantity-value" placeholder="0">
+                        <span class="quantity-increase" data-input="increase">+</span>
+                    </label>
+                    <button class="add-to-cart" data-count="cart">add to cart</button>
+                    <p data-maxlength="100">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore Beatae vitae dicta sunt
+                        explicabo. Nemo enim ipsam voluptatem quia voluptas. Sed ut perspiciatis unde omnis iste natus
+                        error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                        illo inventore Beatae vitae dicta sunt explicabo.
+                    </p>
+                    <p id="product-desc-text-rest"></p>
+                    <span class="read-more">Read-more</span>
+                    <div class="social-media">
+                        <span>Share</span>
+                        <a href="https://www.facebook.com" target="blank">
+                            <span class="fab fa-facebook-f"></span>
+                        </a>
+                        <a href="https://www.google.com" target="blank">
+                            <span class="fab fa-google-plus-g"></span>
+                        </a>
+                        <a href="https://twitter.com" target="blank">
+                            <span class="fab fa-twitter"></span>
+                        </a>
+                        <a href="https://www.pinterest.com" target="blank">
+                            <span class="fab fa-pinterest-p"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-tabs desktop">
+            <ul class="tabs-headers">
+                <li data-tab="1" class="active">Description</li>
+                <li data-tab="2">Additional information</li>
+                <li data-tab="3">Reviews (<span>3</span>)</li>
+            </ul>
+            <div class="tabs-content active" data-tab-content="1">
+                <div class="row">
+                    <div class="col">
+                        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                        parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Aenean commodo ligula eget dolor. Aenean massa.
+                    </div>
+                    <div class="col">
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+                        felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
+                        pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-content" data-tab-content="2">
+                <div class="row">
+                    <div class="col">
+                        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                        parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Aenean commodo ligula eget dolor. Aenean massa.
+                    </div>
+                    <div class="col">
+                        second tab content here
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-content" data-tab-content="3">
+                <div class="row">
+                    <div class="col">
+                        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                        parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Aenean commodo ligula eget dolor. Aenean massa.
+                    </div>
+                    <div class="col">
+                        this is third tab content
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

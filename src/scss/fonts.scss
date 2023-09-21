@@ -1,0 +1,20 @@
+@use "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@use "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@use "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@use "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Lato Regular'), local('Lato-Regular'), url("webfonts/lato-latin-400.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: local('Lato Black'), local('Lato-Black'), url("webfonts/lato-latin-900.woff2") format('woff2');
+}

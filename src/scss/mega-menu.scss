@@ -1,0 +1,62 @@
+@use "variables" as *;
+
+#mega-menu,
+#mega-menu-mobile {
+  @include dropdown;
+  box-sizing: border-box;
+  padding: 55px 0px 55px 0px;
+  left: 0px;
+  right: 0px;
+  li,
+  a {
+    color: #ffffff;
+    padding-bottom: 15px;
+  }
+  a {
+    cursor: pointer;
+    &:hover {
+      color: $details-color2;
+    }
+  }
+  h2 {
+    color: $light-font-color;
+  }
+}
+
+#mega-menu-mobile {
+  padding: 15px;
+  ul {
+    li {
+      display: block;
+      h2 {
+        color: #ffffff;
+      }
+    }
+  }
+  span.open-next-level {
+    padding: 0px 0px 10px 10px;
+  }
+  #product-categories, #sale-menu {
+    padding: 0px 0px 10px 30px;
+  }
+  .arrow::after {
+    float: right;
+  }
+}
+
+.arrow.arrow-open::after {
+  content: "\25b2";
+}
+.open-next-level {
+  display: block;
+  width: 100%;
+}
+
+[data-mobile-menu] {
+  &.active {
+    display: block;
+  }
+  &.not-shown {
+    display: none;
+  }
+}

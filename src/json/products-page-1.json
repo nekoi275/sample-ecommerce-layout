@@ -1,0 +1,44 @@
+[
+    {
+        "imageUrl": "img/product_1.jpg",
+        "text": "Ametist silver ring",
+        "price": 799.55,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_2.jpg",
+        "text": "Chinese dress",
+        "price": 659.55,
+        "type": "button"
+    },
+    {
+        "imageUrl": "img/product_3.jpg",
+        "text": "Mini white dress",
+        "price": 129.55,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_4.jpg",
+        "text": "Black evening dress",
+        "price": 299.99,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_5.jpg",
+        "text": "Floral print mini skirt",
+        "price": 659.55,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_6.jpg",
+        "text": "Blue dress",
+        "price": 410.99,
+        "type": "hover"
+    },
+    {
+        "imageUrl": "img/product_7.jpg",
+        "text": "Red wedding high heels",
+        "price": 410.99,
+        "type": "hover"
+    }
+]

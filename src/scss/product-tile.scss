@@ -1,0 +1,121 @@
+@use "variables" as *;
+
+.product-tile {
+  background-color: $background-color;
+  position: relative;
+  width: 271px;
+  height: 366px;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+
+  img {
+    border-radius: 5px;
+    width: 271px;
+    height: 260px;
+    &.static {
+      height: 366px;
+    }
+    &.slider {
+      width: 263px;
+      height: 220px;
+    }
+  }
+
+  .product-tile-desc {
+    line-height: 18px;
+    padding: 11px;
+    box-sizing: border-box;
+  }
+  .product-tile-hover {
+    @include overlay;
+    display: none;
+    background-image: linear-gradient(to top, $details-color 0%, $details-color2 100%);
+  }
+  .product-tile-hover-button {
+    @include button;
+    display: none;
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    background-color: $background-color;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .product-tile-hover-button.add-to-cart-button {
+    left: 35px;
+  }
+
+  .product-tile-hover-button.add-to-wishlist-button {
+    right: 35px;
+  }
+
+  .fas.fa-plus {
+    font-size: 25px;
+    color: $base-color;
+  }
+  .fas.fa-heart {
+    font-size: 25px;
+    color: $details-color2;
+  }
+  &:hover {
+    .product-tile-hover {
+      display: block;
+    }
+    .product-tile-hover-button {
+      display: block;
+    }
+  }
+
+  .product-tile-button {
+    @include button;
+    border: 1px solid $light-font-color;
+    padding: 12px;
+    margin-bottom: 18px;
+    span {
+      padding: 11px;
+    }
+    .product-tile-button-price {
+      color: $details-color2;
+      border-right: 1px solid $light-font-color;
+    }
+  }
+  .product-tile-overlay {
+    @include overlay;
+    background-image: linear-gradient(to top, #675b99 0%, #dc5987 100%);
+  }
+
+  .product-tile-overlay-text {
+    position: absolute;
+    color: #ffffff;
+    text-align: left;
+    line-height: 24px;
+    top: 220px;
+    left: 30px;
+    right: 100px;
+  }
+
+  .fas.fa-user {
+    font-size: 20px;
+    color: $details-color;
+    position: absolute;
+    top: 313px;
+    left: 30px;
+  }
+
+  .product-tile-time {
+    position: absolute;
+    top: 317px;
+    left: 65px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .product-tile-feature {
+    color: $details-color;
+  }
+}
